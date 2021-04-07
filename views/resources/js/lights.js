@@ -1,9 +1,12 @@
+var socket = io.connect();
 
 function light1(checkbox) {
     if(checkbox.checked == true) {
         console.log("Light 1 Enabled");
+        socket.emit("state", 1);
     } else {
         console.log("Light 1 Disabled");
+        socket.emit("state", 0);
     }
 };
 

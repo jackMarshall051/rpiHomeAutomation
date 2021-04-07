@@ -5,18 +5,17 @@ module.exports = function (app) {
   app.get('/', function(req, res){ 
     res.render('home', {title: "Main"}); 
   })
-
   app.get('/homeauto', function(req, res){ 
-    res.render('homeAuto', {title: "Main"}); 
+    res.render('homeAuto', {title: "HomeAuto"}); 
   })
   app.get('/lighting', function(req, res){ 
-    res.render('lighting', {title: "Main"}); 
+    res.render('lighting', {title: "Lighting"}); 
   })
   app.get('/media', function(req, res){ 
-    res.render('media', {title: "Main"}); 
+    res.render('media', {title: "Media"}); 
   })
   app.get('/dashboard', function(req, res){ 
-    res.render('dashboard', {title: "Main"}); 
+    res.render('dashboard', {title: "Dashboard"}); 
   })
 
 };
