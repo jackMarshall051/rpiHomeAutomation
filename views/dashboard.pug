@@ -1,0 +1,14 @@
+extends layout
+block layout-content    
+    body
+        .container
+            .row
+                .col-12.text-center 
+                    h2 Dashboard
+            .row
+                div(class="h-divider")
+            .row
+                .col-3.text-center
+                    form(action="/api/updateWeather", method="GET")
+                        input(type="submit", value="Update Weather Data")
+    <script src="js/main.js"></script>

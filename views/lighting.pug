@@ -1,0 +1,55 @@
+extends layout
+block layout-content    
+    body
+        .container
+            .row
+                .col-12.text-center 
+                    h2 GPIO Control
+            .row
+                div(class="h-divider")
+            .row.align-items-start
+                .col.text-center
+                    .mid
+                        h4 Light 1
+                        label.rocker
+                            input(type="checkbox" onchange="light1(this);")
+                            span.switch-left On
+                            span.switch-right Off
+                        h4 Light 2
+                        label.rocker
+                            input(type="checkbox" onchange="light2(this);")
+                            span.switch-left On
+                            span.switch-right Off
+                        h4 Light 3
+                        label.rocker
+                            input(type="checkbox" onchange="light3(this);")
+                            span.switch-left On
+                            span.switch-right Off
+                        h4 Light 4
+                        label.rocker
+                            input(type="checkbox" onchange="light4(this);")
+                            span.switch-left On
+                            span.switch-right Off
+                .col.text-center
+                    .mid
+                        h4 Relay 1
+                        label.rocker
+                            input(type="checkbox" onchange="relay1(this);")
+                            span.switch-left On
+                            span.switch-right Off
+                        h4 Relay 2
+                        label.rocker
+                            input(type="checkbox" onchange="relay2(this);")
+                            span.switch-left On
+                            span.switch-right Off
+                        h4 Relay 3
+                        label.rocker
+                            input(type="checkbox" onchange="relay3(this);")
+                            span.switch-left On
+                            span.switch-right Off
+                        h4 Relay 4
+                        label.rocker
+                            input(type="checkbox" onchange="relay4(this);")
+                            span.switch-left On
+                            span.switch-right Off
+    <script src="js/lights.js"></script>

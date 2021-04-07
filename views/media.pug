@@ -1,0 +1,39 @@
+extends layout
+block layout-content    
+    body
+        .container
+            .row
+                .col-12.text-center 
+                    h2 Media
+            .row
+                div.h-divider
+            .row
+                .col-1
+                .col-3
+                    h4 Selected
+                    p.font-weight-bold Input:
+                    p(id="selectedInput").font-weight-bold NONE SELECTED
+                    p.font-weight-bold Output:
+                    p(id="selectedOutput").font-weight-bold NONE SELECTED
+                .col-2.text-center
+                    h4 Input Device
+                    button(onclick="freeToAirTVIn();").btn-block.btn-dark.btn-lg Free to Air TV
+                    button(onclick="appleTVIn();").btn-block.btn-dark.btn-lg Apple TV
+                    button(onclick="loungeRadioIn();").btn-block.btn-dark.btn-lg Lounge Radio
+                    button(onclick="phoneIn();").btn-block.btn-dark.btn-lg Phones
+                    button(onclick="ipadIn();").btn-block.btn-dark.btn-lg iPads
+                .col-2.text-center
+                    h4 Output Device
+                    button(onclick="loungeRadioOut();").btn-block.btn-dark.btn-lg Lounge Radio
+                    button(onclick="smartTVOut();").btn-block.btn-dark.btn-lg Smart TV
+                    button(onclick="appleTVOut();").btn-block.btn-dark.btn-lg Apple TV
+                    button(onclick="wholeHouseOut();").btn-block.btn-dark.btn-lg Whole House
+                    button(onclick="bedroomHeadphonesOut();").btn-block.btn-dark.btn-lg Bedroom Headphones
+                    button(onclick="bedroomSpeakersOut();").btn-block.btn-dark.btn-lg Bedroom Speakers
+                .col-1
+                .col-2.text-center
+                    h4 Settings
+                    button(onclick="clearIn();").btn.btn-block.btn-dark.btn-lg Clear Input
+                    button(onclick="clearOut();").btn.btn-block.btn-dark.btn-lg Clear Output
+                    
+    <script src="js/media.js"></script>

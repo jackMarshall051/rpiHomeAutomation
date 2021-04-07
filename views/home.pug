@@ -1,0 +1,21 @@
+extends layout
+block layout-content    
+    body
+        .container
+            .row
+                .col-12.text-center 
+                    h2 Main Page
+            .row
+                div(class="h-divider")
+                <br />
+            .row.align-items-start
+                .col-3.text-center
+                    button(onclick="window.location.href='/homeauto'").btn.btn-dark.btn-lg Home Automation
+                .col-3.text-center
+                    button(onclick="window.location.href='/lighting'").btn.btn-dark.btn-lg GPIO Control
+                .col-3.text-center
+                    button(onclick="window.location.href='/media'").btn.btn-dark.btn-lg Media/Sound
+                .col-3.text-center
+                    button(onclick="window.location.href='/dashboard'").btn.btn-dark.btn-lg Dashboard
+                    p Weather
+    <script src="js/main.js"></script>
